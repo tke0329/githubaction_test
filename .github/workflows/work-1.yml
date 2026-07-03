@@ -34,7 +34,7 @@ jobs:
     name: 도커 이미지 빌드와 푸시
     needs: makeTagAndRelease
     runs-on: ubuntu-latest
-    steps:
+    steps: # private.html 생성
       - uses: actions/checkout@v6
       - name: src/private.html 생성
         env:
